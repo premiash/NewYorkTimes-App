@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NY Times</title>
+</head>
+<meta charset='utf-8'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/script.js" ></script>
+
+<body>
+    <div class="page-header">
+        <h1>The New York Times 
+  <br>
+  <small>All the News That's Fit to Print</small></h1>
+    </div>
+    <div id="parameters" class="row">
+        <div class="panel panel-default">
+            <div class="panel panel-heading"><span class="glyphicon glyphicon-list-alt"></span>Search Parameters</div>
+            <form id="searchParameters">
+                <label for="searchTerm">Search Term</label>
+                <br>
+                <div class="center">
+                    <input type="text" id="searchTerm word">
+                </div>
+                <br>
+                <label for="number">Number of Records to Retrieve</label>
+                <br>
+                <input type="text" id="number">
+                <br>
+                <label for="startYear">Start Year (Optional)</label>
+                <br>
+                <input type="text" id="startYear">
+                <br>
+                <label for="endYear">End Year (Optional)</label>
+                <br>
+                <input type="text" id="endYear">
+                <br>
+                <br>
+                <button id="search"><span class="glyphicon glyphicon-search"></span>Search</button>
+                <button id="clearResults"><span class="glyphicon glyphicon-trash"></span>Clear Results</button>
+            </form>
+        </div>
+        <!-- end panel -->
+    </div>
+    <!-- end row -->
+
+    <br>
+    <div class="panel panel-default">
+        <div class="panel-heading"><span class="glyphicon glyphicon-th"> </span>Top Articles</div>
+        <div class="panel-body" id="topArticles" class="row">
+        </div>
+    </div>
+</body>
+
+</html>
